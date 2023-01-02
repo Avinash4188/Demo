@@ -331,16 +331,13 @@
                 </apiParam>
               </generatedParameters>
             </apiCall>
-            <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiDoAction" name="UiDoAction" testItemId="10" title="Lookup the Account Name reference to Avinash">
+            <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiDoAction" name="UiDoAction" testItemId="10" title="Lookup the Account Name reference">
               <arguments>
                 <argument id="locator">
                   <value class="uiLocator" uri="ui:locator?name=AccountId&amp;binding=sf%3Aui%3Abinding%3Aobject%3Fobject%3DOpportunity%26field%3DAccountId"/>
                 </argument>
                 <argument id="interaction">
                   <value class="uiInteraction" uri="ui:interaction?name=sfLookup"/>
-                </argument>
-                <argument id="value">
-                  <value class="value" valueClass="string">Avinash</value>
                 </argument>
                 <argument id="captureBefore">
                   <value class="value" valueClass="string">false</value>
@@ -355,7 +352,7 @@
                   <value class="uiWait" uri="default"/>
                 </argument>
                 <argument id="interactionDescription">
-                  <value class="value" valueClass="string">Lookup the Account Name reference to Avinash</value>
+                  <value class="value" valueClass="string">Lookup the Account Name reference</value>
                 </argument>
                 <argument id="autoRetry"/>
               </arguments>
@@ -422,12 +419,26 @@
                         <argument id="captureAfter">
                           <value class="value" valueClass="string">false</value>
                         </argument>
+                        <argument id="blur"/>
+                        <argument id="pressEnter"/>
                       </arguments>
                       <generatedParameters>
-                        <apiParam group="value" name="value" passwordVariableAllowed="true" title="Value">
+                        <apiParam group="value" name="value" passwordVariableAllowed="true" seq="10000" title="Value">
                           <summary>The value to be populated.</summary>
                           <type>
                             <textType/>
+                          </type>
+                        </apiParam>
+                        <apiParam group="value" name="blur" title="Tab off field">
+                          <summary>Whether the tab key should be pressed after the value is populated.</summary>
+                          <type>
+                            <booleanType/>
+                          </type>
+                        </apiParam>
+                        <apiParam group="value" name="pressEnter" title="Press Enter">
+                          <summary>Whether the Enter key should be pressed after the value is populated.</summary>
+                          <type>
+                            <booleanType/>
                           </type>
                         </apiParam>
                       </generatedParameters>

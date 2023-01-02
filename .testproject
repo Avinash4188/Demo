@@ -16,6 +16,12 @@
             <connectionUrl secureStorageNodeId="59ca4aa5-7226-43e1-99e1-c70fab8a6844" url="sf:user=avinash.singh190@provar.trialsbx1;password={password};environment=SANDBOX;lightningMode=true"/>
           </connectionUrls>
         </connection>
+        <connection id="411bfc94-c6a2-411b-a733-d27046d3fe64" name="Admin1">
+          <summary/>
+          <connectionUrls>
+            <connectionUrl secureStorageNodeId="c43da5ec-09e2-4ccc-95b9-429797625583" url="sf:user=avinash.singh@accelirate.com;password={password};securityToken={securityToken};environment=SANDBOX;lightningMode=true"/>
+          </connectionUrls>
+        </connection>
       </connections>
     </connectionClass>
   </connectionClasses>
